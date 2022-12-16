@@ -12,5 +12,4 @@ RUN mkdir ~/slackExample
 RUN echo 'curl -F code=1234 -F client_id=3336676.569200954261 -F client_secret=ABCDEFGH https://slack.com/oauth/v2/authorize?scope=incoming-webhook&client_id=33336676.569200954261' > ~/slackExample/slackCurl.sh
 RUN echo 'export ORCA_SECURITY_API_TOKEN=aHR0cHM6Ly9hcHAudXMub3JjYXNlY3VyaXR5LmlvfHx5YW5YVERoYnZrRkw2aFd6N1R3V1lPUDNLZTE3cVpPMQ==' > ~/orcatoken.sh
 
-RUN mkdir -p ~/orca
-COPY /orca ~/orca
+COPY /orca /root/orca
